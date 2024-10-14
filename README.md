@@ -44,29 +44,32 @@ Una vez tienes el archivo .js, solo queda compilarlo con node para poder ver el 
 node <nombre_archivo>.js
 ```
 
-## Ejercicios para practicar encapsulamiento con Typescript
+## Ejercicios para practicar encapsulamiento con TypeScript
 
-  Ejercicio 1: 
-  Crea una clase llamada CuentaBancaria que tenga las siguientes características:
+### Ejercicio 1: Cuenta Bancaria
 
-    ✔Un atributo privado saldo que solo pueda ser modificado dentro de la clase.
-    ✔Un método público depositar(cantidad: number) que permita sumar un valor al saldo si la cantidad es positiva.
-    ✔Un método público retirar(cantidad: number) que permita restar un valor del saldo solo si la cantidad no excede el saldo actual.
-    ✔Un método público obtenerSaldo() que devuelva el saldo actual de la cuenta.
+Crea una clase llamada `CuentaBancaria` que tenga las siguientes características:
 
-  El objetivo es proteger el atributo saldo para que no pueda ser modificado directamente desde fuera de la clase, pero permitir operaciones a través de métodos controlados.
+- Un atributo **privado** `saldo` que solo pueda ser modificado dentro de la clase.
+- Un método **público** `depositar(cantidad: number)` que permita sumar un valor al saldo si la cantidad es positiva.
+- Un método **público** `retirar(cantidad: number)` que permita restar un valor del saldo solo si la cantidad no excede el saldo actual.
+- Un método **público** `obtenerSaldo()` que devuelva el saldo actual de la cuenta.
 
-  Ejercicio 2:
-  Crea una clase base llamada Empleado que tenga lo siguiente:
+El objetivo es proteger el atributo `saldo` para que no pueda ser modificado directamente desde fuera de la clase, pero permitir operaciones a través de métodos controlados.
 
-    ✔Un atributo protegido salario, que será accesible solo desde la clase Empleado y sus subclases.
-    ✔Un método protegido obtenerSalario() que retorne el valor del salario.
+### Ejercicio 2: Empleado y Gerente
 
-  A continuación, crea una subclase llamada Gerente que extienda de Empleado y tenga lo siguiente:
+Crea una clase base llamada `Empleado` que tenga lo siguiente:
 
-    ✔Un método público mostrarSalario() que imprima el salario en consola.
+- Un atributo **protegido** `salario`, que será accesible solo desde la clase `Empleado` y sus subclases.
+- Un método **protegido** `obtenerSalario()` que retorne el valor del salario.
 
-  El objetivo es que el salario esté protegido para que solo las subclases (como Gerente) puedan acceder a él, y no pueda ser modificado o accedido directamente desde instancias fuera de la clase.
+A continuación, crea una subclase llamada `Gerente` que extienda de `Empleado` y tenga lo siguiente:
+
+- Un método **público** `mostrarSalario()` que imprima el salario en consola.
+
+El objetivo es que el `salario` esté protegido para que solo las subclases (como `Gerente`) puedan acceder a él, y no pueda ser modificado o accedido directamente desde instancias fuera de la clase.
+
   
 
 ## Accede a la píldora sobre OOP Encapsulamiento en Typescript
