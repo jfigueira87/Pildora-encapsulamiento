@@ -49,22 +49,22 @@ node <nombre_archivo>.js
   Ejercicio 1: 
   Crea una clase llamada CuentaBancaria que tenga las siguientes características:
 
-    -Un atributo privado saldo que solo pueda ser modificado dentro de la clase.
-    -Un método público depositar(cantidad: number) que permita sumar un valor al saldo si la cantidad es positiva.
-    -Un método público retirar(cantidad: number) que permita restar un valor del saldo solo si la cantidad no excede el saldo actual.
-    -Un método público obtenerSaldo() que devuelva el saldo actual de la cuenta.
+    ✔Un atributo privado saldo que solo pueda ser modificado dentro de la clase.
+    ✔Un método público depositar(cantidad: number) que permita sumar un valor al saldo si la cantidad es positiva.
+    ✔Un método público retirar(cantidad: number) que permita restar un valor del saldo solo si la cantidad no excede el saldo actual.
+    ✔Un método público obtenerSaldo() que devuelva el saldo actual de la cuenta.
 
   El objetivo es proteger el atributo saldo para que no pueda ser modificado directamente desde fuera de la clase, pero permitir operaciones a través de métodos controlados.
 
   Ejercicio 2:
   Crea una clase base llamada Empleado que tenga lo siguiente:
 
-    -Un atributo protegido salario, que será accesible solo desde la clase Empleado y sus subclases.
-    -Un método protegido obtenerSalario() que retorne el valor del salario.
+    ✔Un atributo protegido salario, que será accesible solo desde la clase Empleado y sus subclases.
+    ✔Un método protegido obtenerSalario() que retorne el valor del salario.
 
   A continuación, crea una subclase llamada Gerente que extienda de Empleado y tenga lo siguiente:
 
-    -Un método público mostrarSalario() que imprima el salario en consola.
+    ✔Un método público mostrarSalario() que imprima el salario en consola.
 
   El objetivo es que el salario esté protegido para que solo las subclases (como Gerente) puedan acceder a él, y no pueda ser modificado o accedido directamente desde instancias fuera de la clase.
   
